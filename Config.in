@@ -1,5 +1,0 @@
-config BR2_PACKAGE_MY_MODEM
-	bool "my-modem"
-	select BR2_PACKAGE_ACTIA_LIB
-	help
-	   Modified modemcontrol
