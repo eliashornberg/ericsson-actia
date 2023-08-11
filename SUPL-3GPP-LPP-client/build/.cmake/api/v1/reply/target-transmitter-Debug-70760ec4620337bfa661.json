@@ -1,0 +1,215 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libs/transmitter/libtransmitter.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"libs/transmitter/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 13,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/transmitter/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/transmitter/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/utility/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "utility::@cd7c6e34db1439ee8925"
+		}
+	],
+	"id" : "transmitter::@8e14d806c9097144c125",
+	"name" : "transmitter",
+	"nameOnDisk" : "libtransmitter.a",
+	"paths" : 
+	{
+		"build" : "libs/transmitter",
+		"source" : "libs/transmitter"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/transmitter.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/i2c.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/serial.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/tcp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/udp.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/file.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/transmitter/src/stdout.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

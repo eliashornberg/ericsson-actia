@@ -1,0 +1,535 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "src/example"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"src/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 9,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 6
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "ASN_DISABLE_OER_SUPPORT=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENACMP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENAGAL"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENAGLO"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NEXOBS=8"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NFREQ=4"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "USE_OPENSSL=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/utility/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/b34e/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/asnlib/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/lpplib/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/osr/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/rtcm_generator/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/args/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/transmitter/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 8,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-Wno-unused-private-field"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "ASN_DISABLE_OER_SUPPORT=1"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENACMP"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENAGAL"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ENAGLO"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NEXOBS=8"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "NFREQ=4"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "USE_OPENSSL=1"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 10,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/src/../include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/utility/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/b34e/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/asnlib/src"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/lpplib/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/osr/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/rtcm_generator/include"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/args/include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/transmitter/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				5
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "rtklib::@76c4743a1a7611028142"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "asnlib::@6d487a593a13f163be9d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "lpplib::@ebf1021774a2079e6c96"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "osr::@cfccbef68b95daba3ad7"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "rtcm_generator::@d6636d39505e17dc4b32"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "transmitter::@8e14d806c9097144c125"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "modem::@c760e445f019904fa7d0"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utility::@cd7c6e34db1439ee8925"
+		}
+	],
+	"id" : "example::@145eef247bfb46b6828c",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/utility/libutility.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/modem/libmodem.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/b34e/librtklib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/asnlib/libasnlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/lpplib/liblpplib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/osr/libosr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/rtcm_generator/librtcm_generator.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "libs/transmitter/libtransmitter.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lactia",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-latomic",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/osr/libosr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/b34e/librtklib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/lpplib/liblpplib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/asnlib/libasnlib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libssl.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libcrypto.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "libs/utility/libutility.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "example",
+	"nameOnDisk" : "example",
+	"paths" : 
+	{
+		"build" : "src",
+		"source" : "src"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/osr_example.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ssr_example.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/agnss_example.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/location_information.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "src/my-modem.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

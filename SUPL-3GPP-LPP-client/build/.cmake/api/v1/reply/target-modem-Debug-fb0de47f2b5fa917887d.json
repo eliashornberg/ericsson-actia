@@ -1,0 +1,192 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libs/modem/libmodem.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"libs/modem/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 6,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 32,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 10,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-fcolor-diagnostics"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-function"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-variable"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-Wno-unused-private-field"
+				},
+				{
+					"fragment" : "-std=c++11"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/modem/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/utility/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/libs/lpplib/include"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "11"
+			},
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "asnlib::@6d487a593a13f163be9d"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "lpplib::@ebf1021774a2079e6c96"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "utility::@cd7c6e34db1439ee8925"
+		}
+	],
+	"id" : "modem::@c760e445f019904fa7d0",
+	"name" : "modem",
+	"nameOnDisk" : "libmodem.a",
+	"paths" : 
+	{
+		"build" : "libs/modem",
+		"source" : "libs/modem"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"path" : "libs/modem/include/modem.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "libs/modem/src/modem.cpp",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
