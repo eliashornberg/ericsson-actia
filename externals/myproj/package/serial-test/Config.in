@@ -1,0 +1,6 @@
+config BR2_PACKAGE_SERIAL_TEST
+	bool "actia-serial-demo"
+	select BR2_PACKAGE_ACTIA_LIB
+	help
+	   Actia serial-demo
+

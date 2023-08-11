@@ -1,0 +1,6 @@
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/hello-acu6/Config.in"
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/supl-3gpp-lpp-client/Config.in"
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/runscript/Config.in"
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/my-modem/Config.in"
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/serial-test/Config.in"
+source "$BR2_EXTERNAL_MYPROJ_PATH/package/test-file/Config.in"

@@ -1,0 +1,4 @@
+config BR2_PACKAGE_TEST_FILE
+	bool "test-file"
+	help
+	   Test demo application

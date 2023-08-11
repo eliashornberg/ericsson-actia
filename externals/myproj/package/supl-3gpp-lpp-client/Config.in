@@ -1,0 +1,22 @@
+config BR2_PACKAGE_SUPL_3GPP_LPP_CLIENT
+	bool "supl-3gpp-lpp-client"
+	depends on BR2_TOOLCHAIN_HAS_THREADS
+	depends on BR2_USE_WCHAR 
+	depends on BR2_TOOLCHAIN_HAS_SSP 
+	depends on BR2_INSTALL_LIBSTDCPP
+	select BR2_PACKAGE_OPENSSL
+	select BR2_PACKAGE_HOST_CMAKE
+	select BR2_PACKAGE_HOST_NINJA
+	select BR2_PACKAGE_CMAKE
+	select BR2_PACKAGE_NINJA
+	select BR2_PACKAGE_ACTIA_LIB
+	select BR2_PACKAGE_MY_MODEM
+	help
+	  Example SUPL 3GPP LPP client for connecting and requesting
+	  assistance information. Including support for converting
+	  3GPP LPP assistance data to RTCM.
+
+	  https://github.com/Ericsson/SUPL-3GPP-LPP-client
+
+comment "supl-3gpp-lpp-client needs a toolchain w/ threads, wchar, SSP, C++"
+	depends on !BR2_TOOLCHAIN_HAS_THREADS || !BR2_USE_WCHAR || !BR2_TOOLCHAIN_HAS_SSP || !BR2_INSTALL_LIBSTDCPP

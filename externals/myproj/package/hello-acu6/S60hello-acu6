@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Start the hello-acu6 program on startup, and send any output to syslog
+#
+
+case "$1" in
+start)
+   echo "Starting hello-acu6..."
+   hello-acu6 | logger -s -t hello-acu6
+   ;;
+stop)
+   ;;
+restart|reload)
+   ;;
+*)
+   echo "Usage: $0 {start|stop|restart}"
+   exit 1
+esac
+
+exit $?
