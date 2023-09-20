@@ -44,12 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/b34e/cmake_install.cmake")
-  include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/asnlib/cmake_install.cmake")
   include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/lpplib/cmake_install.cmake")
-  include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/osr/cmake_install.cmake")
-  include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/rtcm_generator/cmake_install.cmake")
-  include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/transmitter/cmake_install.cmake")
   include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/modem/cmake_install.cmake")
   include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/args/cmake_install.cmake")
   include("/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build/libs/utility/cmake_install.cmake")

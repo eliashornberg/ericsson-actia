@@ -207,6 +207,9 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Always produce ANSI-colored output (GNU/Clang only).
 FORCE_COLORED_OUTPUT:BOOL=ON
 
+//Print FD debug information
+INTERFACE_FD_DEBUG:BOOL=OFF
+
 //Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
@@ -228,6 +231,9 @@ USE_ASAN:BOOL=OFF
 //USE_OPENSSL
 USE_OPENSSL:BOOL=ON
 
+//Dependencies for the target
+asn1_helper_LIB_DEPENDS:STATIC=general;asn1::generated;
+
 //Value Computed by CMake
 example_BINARY_DIR:STATIC=/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client/build
 
@@ -238,19 +244,16 @@ example_IS_TOP_LEVEL:STATIC=ON
 example_SOURCE_DIR:STATIC=/home/eliashornberg/Downloads/SUPL-3GPP-LPP-client
 
 //Dependencies for the target
-lpplib_LIB_DEPENDS:STATIC=general;asnlib;general;utility;general;OpenSSL::SSL;
+generator_rtcm_LIB_DEPENDS:STATIC=general;asn1::generated;general;asn1::helper;
+
+//Dependencies for the target
+lpplib_LIB_DEPENDS:STATIC=general;utility;general;asn1::generated;general;asn1::helper;general;OpenSSL::SSL;
 
 //Dependencies for the target
 modem_LIB_DEPENDS:STATIC=general;utility;general;lpplib;general;atomic;
 
 //Dependencies for the target
-osr_LIB_DEPENDS:STATIC=general;lpplib;general;asnlib;general;rtklib;general;utility;
-
-//Dependencies for the target
-rtcm_generator_LIB_DEPENDS:STATIC=general;osr;general;lpplib;general;asnlib;general;rtklib;general;utility;
-
-//Dependencies for the target
-transmitter_LIB_DEPENDS:STATIC=general;utility;
+receiver_ublox_LIB_DEPENDS:STATIC=general;dependency::interface;
 
 
 ########################
@@ -357,7 +360,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=13
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
