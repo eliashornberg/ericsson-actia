@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-SUPL_3GPP_LPP_CLIENT_VERSION = 524cbff
+SUPL_3GPP_LPP_CLIENT_VERSION = v3.3.1
 SUPL_3GPP_LPP_CLIENT_SITE = $(call github,eliashornberg,SUPL-3GPP-LPP-client,$(SUPL_3GPP_LPP_CLIENT_VERSION))
 SUPL_3GPP_LPP_CLIENT_LICENSE = MXM
 SUPL_3GPP_LPP_CLIENT_LICENSE_FILES = LICENSE
