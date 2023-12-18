@@ -19,4 +19,9 @@ define RUNSCRIPT_INSTALL_TARGET_CMDS
     $(INSTALL) -D -m 0755 $(@D)/$(RUNSCRIPT_SCRIPTS) $(TARGET_DIR)/usr/bin/$(RUNSCRIPT_SCRIPTS)
 endef
 
+define RUNSCRIPT_INSTALL_INIT_SYSV
+   $(INSTALL) -D -m 0755 $(RUNSCRIPT_PKGDIR)/S999startscript.sh \
+      $(TARGET_DIR)/etc/init.d/S999startscript.sh
+endef
+
 $(eval $(generic-package))

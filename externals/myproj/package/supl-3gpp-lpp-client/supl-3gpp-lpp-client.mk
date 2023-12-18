@@ -5,6 +5,8 @@
 ################################################################################
 
 SUPL_3GPP_LPP_CLIENT_VERSION = v3.3.1
+#SUPL_3GPP_LPP_CLIENT_SITE = $(SUPL_3GPP_LPP_PKGDIR)/files/SUPL-3GPP-LPP-client
+#SUPL_3GPP_LPP_CLIENT_METHOD = local
 SUPL_3GPP_LPP_CLIENT_SITE = $(call github,eliashornberg,SUPL-3GPP-LPP-client,$(SUPL_3GPP_LPP_CLIENT_VERSION))
 SUPL_3GPP_LPP_CLIENT_LICENSE = MXM
 SUPL_3GPP_LPP_CLIENT_LICENSE_FILES = LICENSE
@@ -19,10 +21,11 @@ define SUPL_3GPP_LPP_CLIENT_BUILD_CMDS
    (cd $(@D); $(TARGET_CONFIGURE_OPTS) cmake --build build --config Debug)
 endef
 
-#-DCMAKE_VERBOSE_MAKEFILE=ON
-
 define SUPL_3GPP_LPP_CLIENT_INSTALL_TARGET_CMDS
-	@install -m 755 $(@D)/build/src/example $(TARGET_DIR)/usr/bin/example
+	
+	@install -m 755 $(@D)/build/example-lpp $(TARGET_DIR)/usr/bin/example-lpp
+	@install -m 755 $(@D)/build/example-ublox $(TARGET_DIR)/usr/bin/example-ublox
 endef
-
+#works for v3.2.0
+#@install -m 755 $(@D)/build/src/example $(TARGET_DIR)/usr/bin/example
 $(eval $(cmake-package))
